@@ -175,14 +175,25 @@ a > b
 const arr = Array(12).fill('x')
 console.log(arr)
 
-const numbers = [0, 3.14, 9.81, 37, 98.6, 100]
+const numbers = [0, 3.14, 9.81, 37, 98.6, 100, 0, 23, 45, 21, 56, 7, 9 ,27]
 numbers[1] = 20
 console.log(numbers)
+console.log(numbers.reverse())
+console.log(numbers.sort())
+console.log(numbers.indexOf(9.81))
+console.log(numbers.lastIndexOf(0))
+console.log(numbers.includes(100))
+console.log(Array.isArray(numbers))
+console.log(numbers.toString())
+console.log(numbers.slice(3, 9))
+numbers.splice(2,6,5,6,7,8)
+console.log(numbers.splice(2,5,5,6,7,8))
 
 const countries = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland'] 
 let lastIndex = countries.length -1
 console.log(countries)
 console.log(countries[lastIndex])
+console.log(countries.join( ' # '))
 
 const mix = ['Fasha', 22, false, {cities: ['Nairobi, Nakuru, Kisumu, Eldoret']}]
 let access = mix[1]
@@ -202,3 +213,32 @@ const firstArray = [1, 2, 3]
 const secondArray = [4, 5, 6]
 const firstSecond = firstArray.concat(secondArray)
 console.log(firstSecond)
+
+const fruit = ['mango', 'banana', 'lemon', 'orange']
+fruit.push('Pineapple', 'apple')
+fruit.pop()
+fruit.shift(2)
+fruit.unshift('apple')
+console.log(fruit)
+const indexof = fruit.indexOf('orange')
+if (indexof === -1) {
+  console.log('The fruit does not exist in the array')
+} else {
+  console.log(' The fruit exists in the array')
+}
+
+// assignment level 1
+let array = [1,2,3,4,5,6,7,8,9]
+let firstItem = array[0]
+let middleItem = array[Math.floor(array.length/2)]
+let lastItem = array[array.length -1]
+console.log(array)
+console.log(array.length)
+console.log(firstItem, middleItem, lastItem)
+
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort()
+const min = ages[0]
+const max = ages[ages.length -1]
+console.log(ages)
+console.log(`${min} is the minimun age while ${max} is the maximum age`)
