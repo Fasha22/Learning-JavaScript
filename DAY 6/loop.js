@@ -23,3 +23,27 @@
 //      i++
 // }
 // while()
+const numbers = [1, 2, 3, 4, 5]
+for (const num of numbers) {
+    console.log(num **2)
+}
+
+const fruits = ['Apple', 'mango', 'Orange', 'Grapes']
+const newArr = []
+for (const fruit of fruits) {
+    newArr.push(fruit.toUpperCase())
+}
+console.log(newArr)
+
+
+for(let i = 0; i <= 5; i++) {
+if(i == 4) {
+    break
+} console.log(i)
+}
+
+for(let j = 0; j<=6; j++) {
+    if(j==3) {
+        continue
+    } console.log(j)
+}
